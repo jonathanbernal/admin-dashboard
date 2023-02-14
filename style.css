@@ -86,7 +86,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 
     font-size: 1.1rem;
     /* Using this property makes the links only clickable in the icon and name areas
