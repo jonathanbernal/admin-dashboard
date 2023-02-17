@@ -33,11 +33,6 @@ body {
     background-color: var(--blue-tone-color);
     color: var(--white-tone-color);
     padding: 1rem;
-
-    /* By reducing the width of the container, we reduce the amount of unused
-       space by the navigation bar. It makes the element look nicer
-    */
-    width: 80%;
 }
 
 .navbar-brand {
@@ -96,9 +91,115 @@ body {
 }
 
 .header {
-    grid-column: 3 / 12;
-    grid-row: 1 / 2;
-    object-fit: cover;
+    grid-column: 3 / 13;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    background-color: var(--white-tone-color);
+    padding: 1.5rem 4rem;
+}
+
+.header-row {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.search-bar-container {
+    display: flex;
+    align-content: center;
+    flex-grow: 3;
+    column-gap: 0.5rem;
+}
+
+.search-button {
+    order: 1;
+
+    aspect-ratio: 1;
+    border-style: none;
+    background-color: transparent;
+}
+
+#search-bar {
+    order: 2;
+    flex-grow: 2;
+
+    padding: 0 1.5rem;
+    border-radius: 3rem;
+    background-color: var(--gray-tone-color);
+    border-style: none;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+.notification-container button {
+    background-color: transparent;
+    border-style: none;
+}
+
+.account-button {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    background-color: transparent;
+    padding: 0.5rem;
+    border-style: none;
+}
+
+.account-button-icon {
+    width: fit-content;
+}
+
+.account-button-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.user-greeting-container {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+}
+
+.user-greeting-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.user-greeting-avatar {
+    width: 4rem;
+    height: 4rem;
+}
+
+.header-action-buttons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 1rem;
+}
+
+.round-btn {
+    border-style: none;
+    background-color: var(--blue-tone-color);
+    color: var(--white-tone-color);
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    min-width: 5vw;
+    font-weight: 500;
 }
 
 .main {
