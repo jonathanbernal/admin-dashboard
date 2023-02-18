@@ -208,6 +208,7 @@ body {
 }
 
 .round-btn:hover {
+    cursor: pointer;
     transform: scale(1.05);
     box-shadow: 3px 3px var(--gray-tone-color);
     background-color: var(--dark-blue-tone-color);
