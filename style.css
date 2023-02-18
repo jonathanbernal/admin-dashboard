@@ -330,10 +330,33 @@ body {
     gap: 1rem;
 }
 
-.trending-user > img {
+.trending-avatar {
     aspect-ratio: 1;
     width: 3rem;
 }
+
+.trending-avatar:hover, .trending-avatar:focus {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(30deg);
+    }
+    75% {
+        transform: rotateZ(-30deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
 
 .trending-user-text {
     display: flex;
