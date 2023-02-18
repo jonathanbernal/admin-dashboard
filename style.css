@@ -94,7 +94,7 @@ body {
 
 .nav-link-item:hover, .nav-link-item:focus {
     animation: animate-bottom-border;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
