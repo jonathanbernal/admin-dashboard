@@ -150,6 +150,32 @@ body {
     border-style: none;
 }
 
+.notification-container button:hover,
+.notification-container button:focus {
+    animation:forwards;
+    animation-name: rotate;
+    animation-duration: 0.3s;
+    animation-iteration-count: 2;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(-30deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(30deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
 .account-button {
     display: flex;
     gap: 1rem;
@@ -340,12 +366,12 @@ body {
 }
 
 .trending-avatar:hover, .trending-avatar:focus {
-    animation-name: rotate;
+    animation-name: pendulum;
     animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
-@keyframes rotate {
+@keyframes pendulum {
     0% {
         transform: rotateZ(0deg);
     }
