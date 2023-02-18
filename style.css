@@ -205,8 +205,54 @@ body {
 .main {
     grid-column: 3 / 10;
     grid-row: 2 / 4;
-    height: 100vmin;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+
+    padding: 2rem 1.5rem;
 }
+
+.section-title {
+    font-size: 1.5rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    border-left: 0.5rem solid var(--yellow-tone-color-darker);
+    border-radius: 0.5rem;
+    background-color: var(--white-tone-color);
+    padding: 2rem;
+}
+
+.card-title h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.75rem;
+}
+
+.card-action img {
+    width: 1.5rem;
+    aspect-ratio: 1;
+}
+
+
 
 .announcements {
     grid-column: 10 / 12;
