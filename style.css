@@ -7,6 +7,7 @@
     --gray-tone-color: #E2E8F0;
     --white-tone-color: #FFFFFF;
     --gray-font-color: #666666;
+    --dark-blue-tone-color: #1473A6;
 }
 
 * {
@@ -201,6 +202,15 @@ body {
     padding: 0.5rem 1.5rem;
     min-width: 5vw;
     font-weight: 500;
+
+    
+    transition: transform 0.6s, box-shadow 0.3s, background-color 1s;
+}
+
+.round-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px var(--gray-tone-color);
+    background-color: var(--dark-blue-tone-color);
 }
 
 .main, .announcements{
