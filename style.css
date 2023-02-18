@@ -263,6 +263,14 @@ body {
     gap: 1.75rem;
 }
 
+.card-action {
+    transition: transform 1.5s;
+}
+
+.card-action:hover {
+    transform: rotateY(180deg);
+}
+
 .card-action img {
     width: 1.5rem;
     aspect-ratio: 1;
