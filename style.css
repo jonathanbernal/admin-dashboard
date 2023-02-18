@@ -202,7 +202,7 @@ body {
     font-weight: 500;
 }
 
-.main, .announcements, .trending {
+.main, .announcements{
     padding: 2rem 1.5rem;
 }
 
@@ -224,8 +224,8 @@ body {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 2rem;
 }
 
@@ -287,4 +287,6 @@ body {
 .trending {
     grid-column: 10/ 13;
     grid-row: 3 / 4;
+
+    padding: 0rem 1.5rem 2rem 2rem;
 }
