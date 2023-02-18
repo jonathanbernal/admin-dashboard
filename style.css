@@ -92,6 +92,24 @@ body {
     width: fit-content;
 }
 
+.nav-link-item:hover, .nav-link-item:focus {
+    animation: animate-bottom-border;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes animate-bottom-border {
+    from {
+        border-bottom: 2px solid transparent;
+        transform: scale(1);
+    }
+    to {
+        border-bottom: 2px solid var(--white-tone-color);
+        transform: scale(1.03);
+    }
+}
+
 .header {
     grid-column: 3 / 13;
 
@@ -276,6 +294,13 @@ body {
     border-radius: 0.5rem;
     background-color: var(--white-tone-color);
     padding: 2rem;
+    box-shadow: 1px 5px 5px var(--gray-font-color);
+
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 .card-title h3 {
