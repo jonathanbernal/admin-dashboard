@@ -411,8 +411,6 @@ body {
     }
 }
 
-
-
 .trending-user-text {
     display: flex;
     flex-direction: column;
@@ -420,4 +418,43 @@ body {
 
 .card-paragraph, .announcement-text, .trending-project-name {
     color: var(--gray-font-color);
+}
+
+.footer {
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5rem;
+
+    padding: 1rem;
+    background-color: var(--dark-blue-tone-color);
+    color: var(--white-tone-color);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--white-tone-color);
+}
+
+.credits-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    
+    position: absolute;
+    top: 20vw;
+    left: 40vw;
+    width: 20vw;
+    border: solid 3px var(--blue-tone-color);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.credits-header {
+    display: flex;
+    justify-content: space-between;
 }
