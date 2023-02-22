@@ -28,3 +28,6 @@ quite complicated.
 I also learned how to implement animations
 on items. I mainly focused on making animations that would trigger when hovering
 over the different items of the dashboard.
+
+# License
+You can use this website as you wish or improve upon it if you feel like it.
